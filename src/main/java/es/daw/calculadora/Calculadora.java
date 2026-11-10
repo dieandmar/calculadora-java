@@ -13,4 +13,8 @@ public class Calculadora {
         return a - b;
     }
 
+    // multiplica dos números
+    public double multiplicar(double a, double b) {
+    return a * b;
+}
 }
