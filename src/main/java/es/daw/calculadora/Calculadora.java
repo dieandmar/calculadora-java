@@ -3,9 +3,14 @@ package es.daw.calculadora;
 
 public class Calculadora {
 
-    //sumar dos numeros
+    // sumar dos números
     public double sumar(double a, double b) {
         return a + b;
+    }
+
+    // restar el segundo número al primero
+    public double restar(double a, double b) {
+        return a - b;
     }
 
 }
