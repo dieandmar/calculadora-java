@@ -25,11 +25,11 @@ public class Calculadora {
         );
     }
 
-    public double potencia(double base, double exponente) {
-    return Math.pow(base, exponente);
+    return a / b;
     }
 
-    return a / b;
+    public double potencia(double base, double exponente) {
+    return Math.pow(base, exponente);
     }
 }
 
