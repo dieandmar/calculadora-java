@@ -31,5 +31,9 @@ public class Calculadora {
     public double potencia(double base, double exponente) {
     return Math.pow(base, exponente);
     }
+
+    public double modulo(double a, double b) {
+    return a % b;
+    }
 }
 
