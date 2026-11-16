@@ -1,4 +1,3 @@
-
 package es.daw.calculadora;
 
 public class Calculadora {
@@ -15,25 +14,28 @@ public class Calculadora {
 
     // multiplica dos números
     public double multiplicar(double a, double b) {
-    return a * b;
-    }
-    // divide el primer número entre el segundo
-    public double dividir(double a, double b) {
-    if (b == 0) {
-        throw new IllegalArgumentException(
-            "No se puede dividir entre cero"
-        );
+        return a * b;
     }
 
-    return a / b;
+    // divide el primer número entre el segundo
+    public double dividir(double a, double b) {
+        if (b == 0) {
+            throw new IllegalArgumentException(
+                    "No se puede dividir entre cero"
+            );
+        }
+
+        return a / b;
     }
 
     public double potencia(double base, double exponente) {
-    return Math.pow(base, exponente);
+        return Math.pow(base, exponente);
     }
 
     public double modulo(double a, double b) {
-    return a % b;
+        if (b == 0) {
+            throw new IllegalArgumentException("No se puede calcular el módulo entre cero");
+        }
+        return a % b;
     }
 }
-
